@@ -1,88 +1,106 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from '../components/nav'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
-const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+const Home = () => {
+  const router = useRouter()
 
-    <Nav />
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  }
 
-    <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
+  const variantsSvg = {
+    hidden: { opacity: 0, y: 20, scale: 0 },
+    visible: { opacity: 1, y: 0, scale: 1 },
+  }
 
-      <div className="row">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
-        </a>
-      </div>
-    </div>
+  return (
+    <>
+      <Head>
+        <title>Lorenzo Bersano</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
-  </div>
-)
+      <motion.main
+        className="flex flex-col items-center justify-between w-full h-full px-10 pt-10 font-sans bg-gray-900"
+        exit={{ opacity: 0 }}
+      >
+        <div className="flex flex-col items-center">
+          <motion.h2
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            transition={{ duration: 1 }}
+            className="text-xl font-thin text-white sm:text-2xl md:text-3xl lg:text-4xl"
+          >
+            Hi! My name is
+          </motion.h2>
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            transition={{ duration: 1, delay: 1.2 }}
+            className="text-2xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl"
+          >
+            Lorenzo Bersano
+          </motion.h1>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <motion.svg
+            initial="hidden"
+            animate="visible"
+            variants={variantsSvg}
+            style={{ originX: '50%', originY: '100%' }}
+            transition={{ delay: 3 }}
+            viewBox="-30 -50 860 450"
+            className="z-10 -mb-20"
+          >
+            <path
+              fill="transparent"
+              id="curve"
+              d="M0,400 C0,179.0861 179.0861,0 400,0 C620.9139,0 800,179.0861 800,400 L1.42108547e-14,400 Z"
+            />
+            <text className="text-5xl text-white fill-current">
+              <Link href="/blog">
+                <a className="focus:underline hover:underline">
+                  <textPath xlinkHref="#curve" startOffset="0">
+                    My thoughts
+                  </textPath>
+                </a>
+              </Link>
+              <textPath xlinkHref="#curve" startOffset="540">
+                <Link href="/about_me">
+                  <a className="focus:underline hover:underline">About me</a>
+                </Link>
+              </textPath>
+              <textPath xlinkHref="#curve" startOffset="990">
+                <a
+                  href="mailto:lorenzo.bersano@gmail.com"
+                  className="focus:underline hover:underline"
+                >
+                  Contact me
+                </a>
+              </textPath>
+            </text>
+          </motion.svg>
+
+          <motion.img
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            transition={{ duration: 1, delay: 2 }}
+            style={{ height: '50vh', objectFit: 'cover' }}
+            className="ml-12"
+            src="/lorenzob_bew_cut.png"
+          ></motion.img>
+        </div>
+      </motion.main>
+    </>
+  )
+}
 
 export default Home
