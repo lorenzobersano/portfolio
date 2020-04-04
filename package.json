@@ -11,7 +11,7 @@
     "@mdx-js/loader": "^1.5.8",
     "@next/mdx": "^9.3.2",
     "framer-motion": "^1.9.1",
-    "next": "^9.3.0",
+    "next": "^9.3.2",
     "react": "^16.13.0",
     "react-dom": "16.12.0",
     "tailwindcss": "^1.2.0"
