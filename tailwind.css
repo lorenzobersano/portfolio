@@ -1,5 +1,11 @@
 @tailwind base;
 
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  @apply m-0;
+}
+
 @tailwind components;
 
 @tailwind utilities;

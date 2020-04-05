@@ -25,7 +25,7 @@ const Home = () => {
       </Head>
 
       <motion.main
-        className="flex flex-col items-center justify-between w-full h-full px-10 pt-10 font-sans bg-gray-900"
+        className="flex flex-col items-center justify-between w-full h-full px-10 pt-10 bg-gray-900"
         exit={{ opacity: 0 }}
       >
         <div className="flex flex-col items-center">
@@ -57,7 +57,7 @@ const Home = () => {
             style={{ originX: '50%', originY: '100%' }}
             transition={{ delay: 3 }}
             viewBox="-30 -50 860 450"
-            className="z-10 -mb-20"
+            className="z-10 max-w-sm -mb-20"
           >
             <path
               fill="transparent"
