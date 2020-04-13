@@ -8,7 +8,7 @@ module.exports = {
               './pages/**/*.{js,jsx,ts,tsx}',
               './components/**/*.{js,jsx,ts,tsx}',
             ],
-            whitelist: ['body'],
+            whitelist: ['body', '.bg-gradient-r-tailwind-logo'],
             defaultExtractor: (content) =>
               content.match(/[\w-/:]+(?<!:)/g) || [],
           },

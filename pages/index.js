@@ -25,7 +25,7 @@ const Home = () => {
       </Head>
 
       <motion.main
-        className="flex flex-col items-center justify-between w-full h-screen px-10 pt-10 bg-gray-900"
+        className="flex flex-col items-center justify-between w-full h-screen px-10 pt-10 bg-radial-bc-home"
         exit={{ opacity: 0 }}
       >
         <div className="flex flex-col items-center">
@@ -68,7 +68,7 @@ const Home = () => {
               <Link href="/blog">
                 <a className="focus:underline hover:underline">
                   <textPath xlinkHref="#curve" startOffset="0">
-                    My thoughts
+                    My blog
                   </textPath>
                 </a>
               </Link>

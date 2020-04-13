@@ -15,10 +15,10 @@ const Layout = (props) => {
           initial={{ x: -1000 }}
           animate={{ x: 0 }}
           exit={{ x: -1000 }}
-          className="flex-col items-center hidden w-1/5 text-white bg-gray-800 shadow-md sm:flex"
+          className="sticky flex-col items-center hidden w-1/5 text-white bg-gray-800 shadow-md sm:flex"
         >
-          <ul className="w-full">
-            <NavItem href="/" text="Home" />
+          <ul className="sticky top-0 w-full">
+            <NavItem href="/" text="Back home" />
             <NavItem
               active={router.pathname === '/about_me'}
               href="/about_me"
@@ -54,7 +54,7 @@ const Layout = (props) => {
             initial={{ y: 3000 }}
             animate={{ y: 0 }}
             exit={{ y: 3000 }}
-            className="w-full h-32 text-white bg-gray-800 shadow-md"
+            className="w-full h-24 text-white bg-gray-800 shadow-md"
           >
             <ul className="flex flex-row items-center justify-between h-full">
               <NavItem href="/" text="Home" />

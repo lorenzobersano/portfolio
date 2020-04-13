@@ -1,4 +1,5 @@
 import ExternalLink from '../components/ExternalLink'
+import SkillsCard from '../components/SkillsCard'
 
 const AboutMe = (props) => {
   const age = new Date().getFullYear() - 1996
@@ -6,11 +7,11 @@ const AboutMe = (props) => {
   return (
     <main className="container h-screen mx-auto text-white">
       <article>
-        <h1 className="text-3xl text-white">About me</h1>
+        <h1 className="font-mono text-blue-200">About me</h1>
         <p>Hi! I&rsquo;m Lorenzo Bersano.</p>
         <p>I&rsquo;m {age} and I live in beautiful Turin, Italy 🇮🇹</p>
         <section className="mt-8">
-          <h2 className="text-2xl text-white">What do I do</h2>
+          <h2 className="font-mono text-blue-200">What do I do</h2>
           <p>
             I&rsquo;m a fullstack developer at{' '}
             <ExternalLink href="https://toduba.it">Toduba</ExternalLink>, a
@@ -20,30 +21,27 @@ const AboutMe = (props) => {
           </p>
         </section>
         <section className="mt-8">
-          <h2 className="text-2xl text-white">What do I know</h2>
+          <h2 className="font-mono text-blue-200">What do I know</h2>
           <p>
             I can work with every part of the stack, but I'm especially
             proficient in React on the frontend and Node.js on the backend.
           </p>
-          <div className="flex flex-col justify-between mt-4 sm:flex-row">
-            <div>
-              <h3>Frontend</h3>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>jQuery</li>
-                <li>React.js</li>
-                <li>Tailwind.css</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Backend</h3>
-              <ul>
-                <li>Node.js</li>
-                <li>.NET</li>
-              </ul>
-            </div>
+          <div className="flex flex-col mt-4 sm:flex-row">
+            <SkillsCard
+              title="Frontend"
+              skills={[
+                'HTML',
+                'CSS',
+                'JS',
+                'jQuery',
+                'React.js',
+                'Next.js',
+                'Tailwind.css',
+              ]}
+            />
+
+            <SkillsCard title="Backend" skills={['Node.js', '.NET WebApi']} />
+
             <div>
               <h3>Libraries</h3>
               <ul>
