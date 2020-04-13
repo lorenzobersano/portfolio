@@ -7,7 +7,7 @@ const Layout = (props) => {
   const router = useRouter()
 
   return (
-    <div className="flex flex-col w-screen h-screen font-sans bg-gray-900 sm:flex-row">
+    <div className="flex flex-col w-screen font-sans bg-gray-900 sm:flex-row">
       {router.pathname !== '/' && (
         <motion.nav
           key="desktopNav"
@@ -47,7 +47,7 @@ const Layout = (props) => {
         <div className="w-full h-full">{props.children}</div>
       )}
       {router.pathname !== '/' && (
-        <div className="block sm:hidden">
+        <div className="sticky bottom-0 sm:hidden">
           <motion.nav
             key="mobileNav"
             transition={{ duration: 0.5 }}

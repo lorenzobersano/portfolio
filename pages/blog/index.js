@@ -2,11 +2,16 @@ import * as postsMetadata from '../../posts'
 import Post from '../../components/Post'
 
 const Blog = ({ posts }) => (
-  <div className="container mx-auto text-white">
+  <div className="container h-screen mx-auto text-white">
     <h1 className="text-3xl">My thoughts</h1>
     <ul>
       {posts.map((post) => (
-        <Post title={post.title} slug={post.slug} preview={'Brah'} />
+        <Post
+          title={post.title}
+          key={post.slug}
+          slug={post.slug}
+          description={post.description}
+        />
       ))}
     </ul>
   </div>

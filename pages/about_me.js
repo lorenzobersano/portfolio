@@ -4,7 +4,7 @@ const AboutMe = (props) => {
   const age = new Date().getFullYear() - 1996
 
   return (
-    <main className="container mx-auto text-white">
+    <main className="container h-screen mx-auto text-white">
       <article>
         <h1 className="text-3xl text-white">About me</h1>
         <p>Hi! I&rsquo;m Lorenzo Bersano.</p>

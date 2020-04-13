@@ -25,7 +25,7 @@ const Home = () => {
       </Head>
 
       <motion.main
-        className="flex flex-col items-center justify-between w-full h-full px-10 pt-10 bg-gray-900"
+        className="flex flex-col items-center justify-between w-full h-screen px-10 pt-10 bg-gray-900"
         exit={{ opacity: 0 }}
       >
         <div className="flex flex-col items-center">

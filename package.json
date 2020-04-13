@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@mdx-js/loader": "^1.5.8",
+    "@mdx-js/runtime": "^1.5.8",
     "@next/mdx": "^9.3.2",
     "framer-motion": "^1.9.1",
     "next": "^9.3.4",
