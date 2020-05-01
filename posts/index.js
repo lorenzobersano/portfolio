@@ -1,1 +1,1 @@
-export { metadata as md } from './test.mdx'
+export { metadata as md } from './hello-world.mdx'
