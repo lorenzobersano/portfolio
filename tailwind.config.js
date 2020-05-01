@@ -10,6 +10,7 @@ module.exports = {
       netwebapi: ['#7014e8', '#0e5ecf'],
       ui: ['#FF9F2F', '#FF6026'],
       ux: ['#4AC4E2', '#109CBF'],
+      solidity: ['#1c1c1c', '#383838', '#333333', '#656565'],
     },
     radialGradientShapes: {
       // defaults to this value

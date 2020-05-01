@@ -43,7 +43,7 @@ const AboutMe = (props) => {
 
             <SkillsCard
               title="Backend"
-              skills={['Node.js', '.NET WebApi', 'Express']}
+              skills={['Node.js', '.NET WebApi', 'Express', 'Solidity']}
             />
 
             <SkillsCard

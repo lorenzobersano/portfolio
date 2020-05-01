@@ -38,6 +38,9 @@ const SkillsCard = ({ title, skills }) => {
       case 'express':
         skillStyle += 'hover:bg-express-bg hover:text-express-text'
         break
+      case 'solidity':
+        skillStyle += 'hover:bg-gradient-r-solidity hover:text-white'
+        break
       case 'userinterfacedesign':
         skillStyle += 'hover:bg-gradient-r-ui hover:text-white'
         break
