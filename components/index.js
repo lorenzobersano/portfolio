@@ -12,7 +12,7 @@ const components = {
       {...props}
     />
   ),
-  p: (props) => <p className="text-lg text-white" {...props} />,
+  p: (props) => <p className="text-lg leading-relaxed text-white" {...props} />,
   ExampleComponent,
 }
 

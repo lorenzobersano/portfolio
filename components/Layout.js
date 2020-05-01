@@ -7,7 +7,7 @@ const Layout = (props) => {
   const router = useRouter()
 
   return (
-    <div className="flex flex-col w-screen font-sans bg-gray-900 sm:flex-row">
+    <div className="flex flex-col w-screen font-sans bg-gray-900 md:flex-row">
       {router.pathname !== '/' && (
         <motion.nav
           key="desktopNav"
@@ -15,7 +15,7 @@ const Layout = (props) => {
           initial={{ x: -1000 }}
           animate={{ x: 0 }}
           exit={{ x: -1000 }}
-          className="sticky flex-col items-center hidden w-1/5 text-white bg-gray-800 shadow-md sm:flex"
+          className="sticky flex-col items-center hidden w-1/5 text-white bg-gray-800 shadow-md md:flex"
         >
           <ul className="sticky top-0 w-full">
             <NavItem href="/" text="Back home" />
@@ -47,7 +47,7 @@ const Layout = (props) => {
         <div className="w-full h-full">{props.children}</div>
       )}
       {router.pathname !== '/' && (
-        <div className="sticky bottom-0 sm:hidden">
+        <div className="sticky bottom-0 md:hidden">
           <motion.nav
             key="mobileNav"
             transition={{ duration: 0.5 }}

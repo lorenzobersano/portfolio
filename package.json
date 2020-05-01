@@ -15,7 +15,7 @@
     "next": "^9.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "tailwindcss": "^1.2.0",
+    "tailwindcss": "^1.4.1",
     "tailwindcss-gradients": "^3.0.0"
   },
   "devDependencies": {

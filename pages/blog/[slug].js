@@ -8,7 +8,7 @@ import components from '../../components'
 
 const BlogPost = ({ post }) => {
   return (
-    <div className="max-w-lg mx-auto text-lg">
+    <div className="h-screen max-w-lg mx-auto text-lg">
       <div dangerouslySetInnerHTML={{ __html: post }} />
     </div>
   )

@@ -6,6 +6,10 @@ module.exports = {
     },
     linearGradientColors: {
       'tailwind-logo': ['#2ca0af', '#16d8bd'],
+      styledcomponents: ['#db7093', '#daa357'],
+      netwebapi: ['#7014e8', '#0e5ecf'],
+      ui: ['#FF9F2F', '#FF6026'],
+      ux: ['#4AC4E2', '#109CBF'],
     },
     radialGradientShapes: {
       // defaults to this value
@@ -40,11 +44,11 @@ module.exports = {
         },
         css: { bg: '#34aadc', text: '#ffffff' },
         js: { bg: '#f0da50', text: '#000000' },
-        jquery: { bg: '#0868ac', text: '#ffffff' },
-        'react.js': { bg: '#282c34', text: '#56d5fa' },
-        'next.js': { bg: '#000000', text: '#ffffff' },
-        'node.js': { bg: '#ffffff', text: '#689f63' },
-        '.netwebapi': { bg: '#623893', text: '#ffffff' },
+        reactjs: { bg: '#282c34', text: '#56d5fa' },
+        nextjs: { bg: '#000000', text: '#ffffff' },
+        redux: { bg: '#764abc', text: '#ffffff' },
+        nodejs: { bg: '#ffffff', text: '#689f63' },
+        express: { bg: '#ffffff', text: '#000000' },
       },
     },
   },
