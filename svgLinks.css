@@ -1,12 +1,15 @@
 /* purgecss start ignore */
 
 @namespace svg url(http://www.w3.org/2000/svg);
-svg|a text,
-text svg|a {
+/* svg|a text,
+text svg|a,
+text svg|a:visited,
+svg|a:visited text {
   fill: white; /* Even for text, SVG uses fill over color */
-}
+/* } */
 
 svg {
+  fill: white;
   width: 100%;
   height: auto;
 }
