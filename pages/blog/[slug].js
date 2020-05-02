@@ -2,15 +2,22 @@ import fs from 'fs'
 import MDX from '@mdx-js/runtime'
 import ReactDOM from 'react-dom/server'
 import path from 'path'
+import Head from 'next/head'
 
 import * as postsMetadata from '../../posts'
 import components from '../../components'
 
-const BlogPost = ({ post }) => {
+const BlogPost = ({ post, title }) => {
   return (
-    <div className="h-screen max-w-lg mx-auto text-lg">
-      <div dangerouslySetInnerHTML={{ __html: post }} />
-    </div>
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+
+      <div className="h-screen max-w-lg mx-auto text-lg">
+        <div dangerouslySetInnerHTML={{ __html: post }} />
+      </div>
+    </>
   )
 }
 
@@ -26,8 +33,15 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const { slug } = params
 
-  let postContent = fs.readFileSync(path.join('posts', `${slug}.mdx`), 'utf8')
-  postContent = postContent.substring(postContent.indexOf('#'))
+  let [metadata, content] = fs
+    .readFileSync(path.join('posts', `${slug}.mdx`), 'utf8')
+    .split('<!-- START POST -->')
+
+  let title = metadata
+    .split('title:')[1]
+    .split(',\n')[0]
+    .replace(/'/g, '')
+    .replace(/"/g, '')
 
   // Provide variables that might be referenced by JSX
   const scope = {
@@ -36,11 +50,11 @@ export async function getStaticProps({ params }) {
 
   const post = ReactDOM.renderToStaticMarkup(
     <MDX components={components} scope={scope}>
-      {postContent}
+      {content}
     </MDX>
   )
 
-  return { props: { post } }
+  return { props: { post, title } }
 }
 
 export default BlogPost

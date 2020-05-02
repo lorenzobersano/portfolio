@@ -20,8 +20,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Lorenzo Bersano</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Lorenzo Bersano | Home</title>
       </Head>
 
       <motion.main

@@ -1,15 +1,23 @@
+import Head from 'next/head'
+
 import * as postsMetadata from '../../posts'
 import Post from '../../components/Post'
 
 const Blog = ({ posts }) => (
-  <div className="h-screen text-white">
-    <h1 className="container mx-auto mb-8 text-3xl">My blog</h1>
-    <ul>
-      {posts.map((post) => (
-        <Post key={post.slug} {...post} />
-      ))}
-    </ul>
-  </div>
+  <>
+    <Head>
+      <title>Lorenzo Bersano | Blog</title>
+    </Head>
+
+    <div className="h-screen text-white">
+      <h1 className="container mx-auto mb-8 text-3xl">My blog</h1>
+      <ul>
+        {posts.map((post) => (
+          <Post key={post.slug} {...post} />
+        ))}
+      </ul>
+    </div>
+  </>
 )
 
 // This function gets called at build time in the Node.js environment.

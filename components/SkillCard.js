@@ -71,10 +71,10 @@ const SkillCard = ({ skill }) => {
       case 'solidity':
         skillBg = 'bg-gradient-r-solidity'
         break
-      case 'userinterfacedesign':
+      case 'uidesign':
         skillBg = 'bg-gradient-r-ui'
         break
-      case 'userexperiencedesign':
+      case 'uxdesign':
         skillBg = 'bg-gradient-r-ux'
         break
     }
@@ -93,7 +93,7 @@ const SkillCard = ({ skill }) => {
         <span
           onMouseOver={() => setIsHover(true)}
           onMouseOut={() => setIsHover(false)}
-          className={`absolute p-4 w-full md:w-auto ${skillText}`}
+          className={`absolute p-4 w-10/12 cursor-pointer md:w-auto ${skillText}`}
         >
           {skill}
         </span>
