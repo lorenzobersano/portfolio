@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 
-const SkillsCard = ({ title, skills }) => {
+import SkillCard from './SkillCard'
+
+const SkillsCards = ({ title, skills }) => {
   function getSkillStyle(skill) {
     let skillStyle = ''
 
@@ -61,7 +63,7 @@ const SkillsCard = ({ title, skills }) => {
 
     return (
       <motion.li whileHover={{ x: 8 }} className={className} key={i}>
-        {skill}
+        <span>{skill}</span>
       </motion.li>
     )
   }
@@ -71,9 +73,13 @@ const SkillsCard = ({ title, skills }) => {
       <h3 className="mb-2 font-mono text-sm tracking-wider text-gray-400 uppercase">
         {title}
       </h3>
-      <ul>{skills.map((skill, i) => renderSkill(skill, i))}</ul>
+      <ul>
+        {skills.map((skill, i) => (
+          <SkillCard skill={skill} key={i} />
+        ))}
+      </ul>
     </div>
   )
 }
 
-export default SkillsCard
+export default SkillsCards

@@ -8,8 +8,8 @@ module.exports = {
       'tailwind-logo': ['#2ca0af', '#16d8bd'],
       styledcomponents: ['#db7093', '#daa357'],
       netwebapi: ['#7014e8', '#0e5ecf'],
-      ui: ['#FF9F2F', '#FF6026'],
-      ux: ['#4AC4E2', '#109CBF'],
+      ui: ['#FF6026', '#FF9F2F'],
+      ux: ['#109CBF', '#4AC4E2'],
       solidity: ['#1c1c1c', '#383838', '#333333', '#656565'],
     },
     radialGradientShapes: {

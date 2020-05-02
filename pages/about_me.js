@@ -1,5 +1,5 @@
 import ExternalLink from '../components/ExternalLink'
-import SkillsCard from '../components/SkillsCard'
+import SkillsCards from '../components/SkillsCards'
 
 const AboutMe = (props) => {
   const age = new Date().getFullYear() - 1996
@@ -26,8 +26,8 @@ const AboutMe = (props) => {
             I can work with every part of the stack, but I'm especially
             proficient in React on the frontend and Node.js on the backend.
           </p>
-          <div className="flex flex-col mt-4 space-y-8 md:space-y-0 md:flex-row">
-            <SkillsCard
+          <div className="flex flex-col mt-4 space-x-0 space-y-8 md:space-y-0 md:space-x-8 md:flex-row">
+            <SkillsCards
               title="Frontend"
               skills={[
                 'HTML',
@@ -41,12 +41,12 @@ const AboutMe = (props) => {
               ]}
             />
 
-            <SkillsCard
+            <SkillsCards
               title="Backend"
               skills={['Node.js', '.NET WebApi', 'Express', 'Solidity']}
             />
 
-            <SkillsCard
+            <SkillsCards
               title="Other"
               skills={['User Interface Design', 'User Experience Design']}
             />
