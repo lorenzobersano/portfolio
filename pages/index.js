@@ -21,6 +21,15 @@ const Home = () => {
     <>
       <Head>
         <title>Lorenzo Bersano | Home</title>
+        <meta property="og:title" content="Lorenzo Bersano | Home" />
+        <meta property="og:site_name" content="Lorenzo Bersano" />
+        <meta property="og:description" content="Welcome to my website!" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@lobersano" />
+        <meta
+          property="og:image"
+          content="https://lorenzobersano.com/og/home.png"
+        />
       </Head>
 
       <motion.main

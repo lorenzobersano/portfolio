@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
           <meta name="author" content="Lorenzo Bersano" />
           <meta
             name="keywords"
-            content="Lorenzo, Bersano, Lorenzo Bersano, lobersano, software engineer, fullstack developer, Turin, Torino, lorenzobersano"
+            content="Lorenzo, Bersano, Lorenzo Bersano, lorenzo bersano, lorenzo, bersano, lobersano, software engineer, fullstack developer, Turin, Torino, lorenzobersano"
           />
           <meta
             name="viewport"
