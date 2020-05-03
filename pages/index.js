@@ -95,6 +95,7 @@ const Home = () => {
             style={{ height: '50vh', objectFit: 'cover' }}
             className="ml-12"
             src="/lorenzob_bew_cut.png"
+            alt="A picture of Lorenzo Bersano"
           ></motion.img>
         </div>
       </motion.main>
