@@ -73,22 +73,30 @@ const Home = () => {
               d="M0,400 C0,179.0861 179.0861,0 400,0 C620.9139,0 800,179.0861 800,400 L1.42108547e-14,400 Z"
             />
             <text className="text-5xl text-white fill-current">
-              <Link href="/blog">
-                <a className="focus:underline hover:underline">
-                  <textPath xlinkHref="#curve" startOffset="0">
+              <textPath xlinkHref="#curve" startOffset="0">
+                <Link href="/blog">
+                  <a
+                    style={{ fill: 'white' }}
+                    className="focus:underline hover:underline"
+                  >
                     My blog
-                  </textPath>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </textPath>
               <textPath xlinkHref="#curve" startOffset="540">
                 <Link href="/about_me">
-                  <a className="focus:underline hover:underline">About me</a>
+                  <a
+                    style={{ fill: 'white' }}
+                    className="focus:underline hover:underline"
+                  >
+                    About me
+                  </a>
                 </Link>
               </textPath>
               <textPath xlinkHref="#curve" startOffset="990">
                 <a
-                  href="mailto:lorenzo.bersano@gmail.com"
                   className="focus:underline hover:underline"
+                  href="mailto:lorenzo.bersano@gmail.com"
                 >
                   Contact me
                 </a>

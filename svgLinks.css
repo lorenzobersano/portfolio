@@ -2,9 +2,7 @@
 
 @namespace svg url(http://www.w3.org/2000/svg);
 svg|a text,
-text svg|a,
-svg|a:visited,
-svg|a:visited {
+text svg|a {
   fill: white; /* Even for text, SVG uses fill over color */
 }
 
