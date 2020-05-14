@@ -3,6 +3,8 @@ module.exports = {
     fontFamily: {
       sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
       mono: ['Space Mono', 'monospace'],
+      code: ['Fira Code', 'monospace'],
+      funky: ['Modak', 'cursive'],
     },
     linearGradientColors: {
       'tailwind-logo': ['#2ca0af', '#16d8bd'],

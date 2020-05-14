@@ -1,5 +1,3 @@
-import ExampleComponent from './ExampleComponent'
-
 // Provide custom components for markdown elements
 const components = {
   h1: (props) => (
@@ -13,7 +11,9 @@ const components = {
     />
   ),
   p: (props) => <p className="text-lg leading-relaxed text-white" {...props} />,
-  ExampleComponent,
+  code: (props) => (
+    <code className="text-green-600 bg-black font-code" {...props} />
+  ),
 }
 
 export default components
