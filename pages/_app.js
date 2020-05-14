@@ -4,7 +4,7 @@ import '../tailwind.css'
 import '../svgLinks.css'
 import Layout from '../components/Layout'
 
-Router.events.on('routeChangeStart', (url) => {
+Router.events.on('routeChangeComplete', (url) => {
   if (window && window._paq) {
     window._paq.push(['setCustomUrl', url])
     window._paq.push(['setDocumentTitle', document.title])

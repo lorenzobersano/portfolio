@@ -12,10 +12,10 @@
     "@mdx-js/runtime": "^1.5.8",
     "@next/mdx": "^9.3.2",
     "framer-motion": "^1.9.1",
-    "next": "^9.3.4",
+    "next": "^9.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "tailwindcss": "^1.4.1",
+    "tailwindcss": "^1.4.6",
     "tailwindcss-gradients": "^3.0.0"
   },
   "devDependencies": {
