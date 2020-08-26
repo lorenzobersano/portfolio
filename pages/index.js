@@ -93,13 +93,15 @@ const Home = () => {
                   </a>
                 </Link>
               </textPath>
-              <textPath xlinkHref="#curve" startOffset="990">
-                <a
-                  className="focus:underline hover:underline"
-                  href="mailto:lorenzo.bersano@gmail.com"
-                >
-                  Contact me
-                </a>
+              <textPath xlinkHref="#curve" startOffset="1050">
+                <Link href="/contacts">
+                  <a
+                    style={{ fill: 'white' }}
+                    className="focus:underline hover:underline"
+                  >
+                    Contacts
+                  </a>
+                </Link>
               </textPath>
             </text>
           </motion.svg>

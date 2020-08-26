@@ -1,19 +1,42 @@
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
-const Post = ({ title, slug, description, date }) => (
-  <li key={slug} className="w-full">
-    <Link href="/blog/[slug]" as={`/blog/${slug}`}>
-      <a>
-        <div className="py-8 rounded-lg hover:bg-gray-800">
-          <div className="container mx-auto">
-            <h3 className="font-bold">{title}</h3>
-            <p className="text-gray-400">{description}</p>
-            <p className="text-sm">{new Date(date).toLocaleDateString()}</p>
-          </div>
-        </div>
-      </a>
-    </Link>
-  </li>
-)
+const Post = ({ title, slug, description, date }) => {
+  const [isHovering, setIsHovering] = useState(false)
+
+  return (
+    <li key={slug} className="w-full">
+      <Link href={`/blog/${slug}`}>
+        <a>
+          <motion.div
+            onMouseOver={() => setIsHovering(true)}
+            onMouseOut={() => setIsHovering(false)}
+            whileHover={{ y: -5 }}
+            className="py-8 text-xl rounded-lg"
+          >
+            <div className="container mx-auto">
+              <h3
+                className={`font-bold ${isHovering ? 'text-yellow-400' : ''}`}
+              >
+                {title}
+              </h3>
+              <p className={`${isHovering ? 'text-yellow-200' : ''}`}>
+                {new Date(date).toLocaleDateString()}
+              </p>
+              <p
+                className={`${
+                  isHovering ? 'text-yellow-100' : 'text-gray-400'
+                }`}
+              >
+                {description}
+              </p>
+            </div>
+          </motion.div>
+        </a>
+      </Link>
+    </li>
+  )
+}
 
 export default Post

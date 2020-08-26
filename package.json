@@ -8,14 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.5.8",
-    "@mdx-js/runtime": "^1.5.8",
-    "@next/mdx": "^9.3.2",
     "framer-motion": "^1.9.1",
-    "next": "^9.4.0",
+    "next": "^9.5.2",
+    "prism-react-renderer": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "tailwindcss": "^1.4.6",
+    "react-element-to-jsx-string": "^14.3.1",
+    "tailwindcss": "^1.7.3",
     "tailwindcss-gradients": "^3.0.0"
   },
   "devDependencies": {

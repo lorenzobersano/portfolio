@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import * as postsMetadata from '../../posts'
-import Post from '../../components/Post'
+import { posts as postsMetadata } from 'posts.json'
+import Post from 'components/Post'
 
 const Blog = ({ posts }) => (
   <>
@@ -10,7 +10,9 @@ const Blog = ({ posts }) => (
     </Head>
 
     <div className="h-screen text-white">
-      <h1 className="container mx-auto mb-8 text-3xl">My blog</h1>
+      <h1 className="container mx-auto mb-8 font-mono text-3xl text-blue-200">
+        My blog
+      </h1>
       <ul>
         {posts.map((post) => (
           <Post key={post.slug} {...post} />
@@ -28,7 +30,7 @@ export async function getStaticProps() {
   // will receive `posts` as a prop at build time
   return {
     props: {
-      posts: Object.values(postsMetadata),
+      posts: postsMetadata,
     },
   }
 }

@@ -11,7 +11,7 @@ const SkillCard = ({ skill }) => {
       animation.start({
         borderRadius: 8,
         flexGrow: 1,
-        padding: '16px',
+        padding: '18px',
       })
     } else {
       animation.start({
@@ -88,12 +88,16 @@ const SkillCard = ({ skill }) => {
     )
 
     return (
-      <li className="flex items-center w-full py-4 -ml-4">
-        <motion.div animate={animation} className={skillBg} />
+      <li className="relative flex items-center w-full py-4 -ml-4">
+        <motion.div
+          animate={animation}
+          className={skillBg}
+          transition={{ duration: 0.3 }}
+        />
         <span
           onMouseOver={() => setIsHover(true)}
           onMouseOut={() => setIsHover(false)}
-          className={`absolute p-4 w-10/12 cursor-pointer md:w-auto ${skillText}`}
+          className={`absolute p-4 w-full ${skillText}`}
         >
           {skill}
         </span>

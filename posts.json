@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "slug": "an-ode-to-geronimo-stilton",
+      "title": "An ode to Geronimo Stilton: defying the fixed nature of the Web",
+      "description": "How the adventures of the beloved journalist mouse inspired the layout of the homepage of my website",
+      "date": 1598471525000
+    },
+    {
+      "slug": "hello-world",
+      "title": "Hello world!",
+      "description": "This is my first post",
+      "date": 1586789185546
+    }
+  ]
+}

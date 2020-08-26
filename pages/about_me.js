@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import ExternalLink from '../components/ExternalLink'
-import SkillsCards from '../components/SkillsCards'
+import ExternalLink from 'components/ExternalLink'
+import SkillsCards from 'components/SkillsCards'
 
 const AboutMe = (props) => {
   const age = new Date().getFullYear() - 1996
@@ -12,7 +12,7 @@ const AboutMe = (props) => {
         <title>Lorenzo Bersano | About me</title>
       </Head>
 
-      <main className="container h-full mx-auto text-white md:h-screen">
+      <main className="container h-full mx-auto text-lg text-white md:h-screen">
         <article>
           <h1 className="font-mono text-blue-200">About me</h1>
           <p>Hi! I&rsquo;m Lorenzo Bersano.</p>
