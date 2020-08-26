@@ -10,6 +10,15 @@ export default function MyApp({ Component, pageProps, router }) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        {process.browser && (
+          <script
+            async
+            defer
+            data-domain="lorenzobersano.com"
+            src="https://plausible.io/js/plausible.js"
+          ></script>
+        )}
       </Head>
 
       <Layout>

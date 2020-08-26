@@ -32,15 +32,6 @@ export default class MyDocument extends Document {
           />
 
           <link rel="shortcut icon" href="/favicon.ico" />
-
-          {process.browser && (
-            <script
-              async
-              defer
-              data-domain="lorenzobersano.com"
-              src="https://plausible.io/js/plausible.js"
-            ></script>
-          )}
         </Head>
         <body className="bg-gray-900">
           <Main />
