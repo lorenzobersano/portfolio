@@ -296,7 +296,9 @@ function NormanChainsaws({ metadata }) {
 }
 
 export async function getStaticProps() {
-  let metadata = postsMetadata.filter(({ slug }) => slug === 'hello-world')[0]
+  let metadata = postsMetadata.filter(
+    ({ slug }) => slug === 'norman-chainsaws'
+  )[0]
 
   return { props: { metadata } }
 }

@@ -14,8 +14,8 @@ const Blog = ({ posts }) => (
         My blog
       </h1>
       <ul>
-        {posts.map((post) => (
-          <Post key={post.slug} {...post} />
+        {posts.map((post, i) => (
+          <Post key={i} {...post} />
         ))}
       </ul>
     </div>
