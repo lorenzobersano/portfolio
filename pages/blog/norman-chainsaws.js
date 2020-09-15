@@ -280,8 +280,8 @@ function NormanChainsaws({ metadata }) {
         <P>
           This is particularly true in digital design (for example: put the
           submit button of a newsletter signup form to the right of the email
-          input), but if we translate the same rule from the digital to the real
-          world the point still stands.
+          input), but if we translate the same rule from the digital to the
+          physical world the point still stands.
         </P>
         <H2>How to fix this flawed design?</H2>
         <P>
