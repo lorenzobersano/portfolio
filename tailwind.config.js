@@ -2,6 +2,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
+      serif: ['Georgia', 'serif'],
       mono: ['Space Mono', 'monospace'],
       code: ['Fira Code', 'monospace'],
       funky: ['Modak', 'cursive'],

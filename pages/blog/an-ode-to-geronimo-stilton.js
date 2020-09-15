@@ -128,8 +128,11 @@ function AnOdeToGeronimoStilton({ metadata }) {
         <span className="mt-16 block" />
         <H1>An ode to Geronimo Stilton: defying the fixed nature of the Web</H1>
         <P>
-          Against all odds, my favourite mouse when I was a kid wasn&rsquo;t the
-          world-famous Disney mascotte, but <strong>Geronimo Stilton</strong>.
+          <span className="smallcaps font-bold">
+            Against all odds, my favourite mouse when I was a kid
+          </span>{' '}
+          wasn&rsquo;t the world-famous Disney mascotte, but{' '}
+          <strong>Geronimo Stilton</strong>.
         </P>
         <P>
           The adventures of the journalist mouse accompanied me for my entire
@@ -180,7 +183,7 @@ function AnOdeToGeronimoStilton({ metadata }) {
           <Img
             id="stiltonScreen"
             alt="The paths I am talking about"
-            src="/geronimo-example-path.png"
+            src="/an-ode-to-geronimo-stilton/geronimo-example-path.png"
             caption="An extract from my precious personal collection"
           />
         </div>
@@ -199,14 +202,22 @@ function AnOdeToGeronimoStilton({ metadata }) {
           <InlineCode>{'<geronimo-crazy-text>'}</InlineCode> tag here, so how
           can we get those Stilton-y paths?
         </P>
-        <H2>SVG to the rescue</H2>
+        <H2>
+          <span className="smallcaps">SVG</span> to the rescue
+        </H2>
         <div className="space-y-4">
           <P>
             Luckily, we have the Scalable Vector Graphics standard on the Web,
             which is a great way to make content break out of its common
             vertical layout and make it more expressive and engaging.
           </P>
-          <H2> Making text follow a given SVG path</H2>
+          <H2>
+            {' '}
+            Making text follow a given <span className="smallcaps">
+              SVG
+            </span>{' '}
+            path
+          </H2>
           <div className="my-4">
             <InfoBox>
               <>
@@ -223,8 +234,9 @@ function AnOdeToGeronimoStilton({ metadata }) {
             </InfoBox>
           </div>
           <P>
-            SVG can be used to make simple geometric shapes with ready-to-go
-            tags (<InlineCode>{'<circle>'}</InlineCode>,{' '}
+            <span className="smallcaps">SVG</span> can be used to make simple
+            geometric shapes with ready-to-go tags (
+            <InlineCode>{'<circle>'}</InlineCode>,{' '}
             <InlineCode>{'<rect>'}</InlineCode>):
           </P>
           <CodeWithSource>
@@ -270,13 +282,15 @@ function AnOdeToGeronimoStilton({ metadata }) {
             text follow (you guessed it) a path.
           </P>
           <P>
-            First of all we have to create an SVG, so let&rsquo;s head over to{' '}
+            First of all we have to create an{' '}
+            <span className="smallcaps">SVG</span>, so let&rsquo;s head over to{' '}
             <ExternalLink href="https://figma.com">Figma</ExternalLink>{' '}
             <div className="my-4">
               <InfoBox>
                 <>
                   Don&rsquo;t worry if you don&rsquo;t have Figma on your
-                  computer, you can copy the SVG code below by pressing
+                  computer, you can copy the{' '}
+                  <span className="smallcaps">SVG</span> code below by pressing
                   &ldquo;Show code&rdquo; and then copying it.
                 </>
               </InfoBox>
@@ -300,8 +314,9 @@ function AnOdeToGeronimoStilton({ metadata }) {
           Now that we have our shape to follow, it&rsquo;s time to introduce the{' '}
           <InlineCode>{'<text>'}</InlineCode>
           and <InlineCode>{'<textPath>'}</InlineCode> tags which let us,
-          respectively, draw an SVG text element and make that text follow a
-          certain path, in our case the semicircular shape shown just above.
+          respectively, draw an <span className="smallcaps">SVG</span> text
+          element and make that text follow a certain path, in our case the
+          semicircular shape shown just above.
         </P>
         <div className="h-4" />
         <CodeWithSource>
@@ -355,8 +370,9 @@ function AnOdeToGeronimoStilton({ metadata }) {
         <P>And that&rsquo;s a wrap!</P>
         <P>
           In this article I showed you how to make content break out of its
-          normal vertical flow using SVG, specifically how to use it in order to
-          make text follow a certain path.
+          normal vertical flow using <span className="smallcaps">SVG</span>,
+          specifically how to use it in order to make text follow a certain
+          path.
         </P>
       </PostContentLayout>
     </>

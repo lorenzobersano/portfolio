@@ -30,7 +30,7 @@ function HelloWorld({ metadata }) {
       <PostContentLayout>
         <H1>Hello world!</H1>
         <P>This is my first post</P>
-        <H2>What's this blog about</H2>
+        <H2>What&rsquo;s this blog about</H2>
         <P>
           Expect me to write about anything I know and find interesting,
           especially code tutorials, UI/UX design tips and website redesigns.

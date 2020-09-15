@@ -1,8 +1,9 @@
 import Layout from '../components/Layout'
 import Head from 'next/head'
 
-import '../tailwind.css'
-import '../svgLinks.css'
+import 'styles/tailwind.css'
+import 'styles/svgLinks.css'
+import 'styles/typography.css'
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps, router }) {

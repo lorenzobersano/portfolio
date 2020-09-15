@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "norman-chainsaws",
+      "title": "Norman Chainsaws",
+      "description": "A story about a chainsaw and bad user experience",
+      "date": 1600150667000
+    },
+    {
       "slug": "an-ode-to-geronimo-stilton",
       "title": "An ode to Geronimo Stilton: defying the fixed nature of the Web",
       "description": "How the adventures of the beloved journalist mouse inspired the layout of the homepage of my website",
